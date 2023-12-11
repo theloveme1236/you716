@@ -35,6 +35,8 @@ def open_browser():
 con = 0
 errrrroo = 0
 No_tasks = 0
+NoSuchElementException = 0
+
 def like3like_login_first():
     for cookies_totel in os.listdir(os.getcwd()):
         cookies_totel_1 = cookies_totel.split('_cookies')[0]
@@ -148,6 +150,14 @@ def failed_success_minutes():
         print('failed_success_minutes')	
     except NoSuchElementException:
         print('NoSuchElementException_failed_success_minutes')
+        NoSuchElementException += 1
+        if NoSuchElementException == 6:
+            print('NoSuchElementException_failed_success_minutes')
+            print('NoSuchElementException_failed_success_minutes')
+            print('NoSuchElementException_failed_success_minutes')
+            print('NoSuchElementException_failed_success_minutes')
+            sys.exit()
+            
     except Exception as ssssd2:
         print('failed_success_minutes:  ',ssssd2)
 def follow_tiktok():
